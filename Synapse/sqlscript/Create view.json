@@ -1,0 +1,17 @@
+{
+	"name": "Create view",
+	"properties": {
+		"content": {
+			"query": "create view SalesLT_AddressView As\nSELECT\n    TOP 100 *\nFROM\n    OPENROWSET(\n        BULK 'https://rgadls2607.dfs.core.windows.net/gold/SalesLT/Address/',\n        FORMAT = 'DELTA'\n    ) AS [result]\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "gold_db",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
