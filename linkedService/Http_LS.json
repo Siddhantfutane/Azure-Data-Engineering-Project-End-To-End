@@ -1,0 +1,12 @@
+{
+	"name": "Http_LS",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://datasets.imdbws.com/title.ratings.tsv.gz",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
