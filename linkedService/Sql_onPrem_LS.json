@@ -1,0 +1,29 @@
+{
+	"name": "Sql_onPrem_LS",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "DESKTOP-30B7Q6H\\SQLEXPRESS",
+			"database": "AdventureWorksLT2017",
+			"encrypt": "optional",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "siddhant26",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "RG_KV_LS",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "password",
+				"secretVersion": "9ca62432a67c4b4f82fba1521f1bcc7b"
+			}
+		},
+		"connectVia": {
+			"referenceName": "SHIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"name": "rg-data-engineer-project",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7f04aead-4e61-4abf-8b2c-16205466d316",
+		"tenantId": "622d6f2c-802a-47ad-ac53-de631c6651ff"
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"name": "RG_KV_LS",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://RG-KV-2607.vault.azure.net/"
+		}
+	}
+}
